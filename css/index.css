@@ -1,0 +1,23 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+
+/*========= HEADER =============*/
+header {
+    font-family: 'Oswald', sans-serif;
+}
+span, li{
+    font-size: 1.3rem;
+}
+a {
+    color: black;
+}
+.link-secondary a{
+    color: gray;
+}
+a:hover, .link-secondary a:hover{
+    color:#800320;
+}
+.title{
+    font-size: 2rem;
+    color: #296140;
+}
