@@ -21,3 +21,20 @@ a:hover, .link-secondary a:hover{
     font-size: 2rem;
     color: #296140;
 }
+.icons-header {
+    display: flex;
+    gap: 2rem;
+}
+/*=========== SECTION CARDS ==========*/
+.products-title{
+    font-family: 'Oswald', sans-serif;
+    background: #800320;
+    color: #fff;
+    padding: 10px;
+}
+.margin{
+    margin: 2rem 0 2rem 0;
+}
+.card {
+    width: 20rem;
+}
