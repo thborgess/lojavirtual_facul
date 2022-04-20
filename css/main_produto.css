@@ -1,3 +1,10 @@
+/*========= HEADER PRODUTO =============*/
+header {
+    font-family: 'Oswald', sans-serif;
+    border-bottom: 1px solid rgb(173, 170, 170);
+}
+
+
 /*========= MAIN PRODUTO =============*/
 
 .main-produto {
@@ -30,11 +37,18 @@
 
 .slide-imagem img {
     height: 550px;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform .5s ease;
 }
+
+.slide-imagem:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+ }
 
 #atual {
     margin-left: 1120px;
-    transition: all 1.5s;
+    transition: all 1.0s;
 }
 
 .btn {
@@ -54,12 +68,12 @@
 }
 
 #voltar {
-    top: 60%;
+    top: 50%;
     left: 5%;
 }
 
 #avancar {
-    top: 60%;
+    top: 50%;
     left: 55%;
 }
 
