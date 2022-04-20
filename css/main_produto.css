@@ -43,7 +43,7 @@ main {
 
 .slides {
     height: 555px; 
-    width: 670px;
+    width: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
