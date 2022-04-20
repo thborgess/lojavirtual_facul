@@ -1,28 +1,55 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+var dots = document.querySelector('.dots');
+var quant = document.querySelectorAll('.slides .slide-imagem');
+var atual = 0
+var imagem = document.getElementById('atual');
+var avancar = document.getElementById('avancar');
+var voltar = document.getElementById('voltar');
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+for(let i = 0; i < quant.length; i++) {
+    var div = document.createElement('div');
+    div.id = i;
+    dots.appendChild(div)
+} 
+
+document.getElementById('0').classList.add('imgAtual');
+
+var pos = document.querySelectorAll('.dots div');
+
+for (let i=0; i < pos.length; i++) {
+    pos[i].addEventListener('click', ()=> {
+        atual=pos[i].id;
+        slide();
+    })
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+voltar.addEventListener('click', ()=> {
+    atual--;
+    slide();
+})
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+avancar.addEventListener('click', ()=> {
+    atual++;
+    slide();
+})
+
+function slide() {
+    if (atual >= quant.length) {
+        atual=0
+    } else if (atual < 0) {
+        atual = quant.length - 1
+    }
+
+    if (atual == 0) {
+        document.getElementById('atual').style.marginLeft = "1120px";
+    } else if (atual == 1) {
+        document.getElementById('atual').style.marginLeft = "0px";
+    } else if (atual == 2) {
+        document.getElementById('atual').style.marginLeft = "-1120px";    
+    }
+
+    
+
+    document.querySelector('.imgAtual').classList.remove('imgAtual');
+    //imagem.style.marginLeft = 1120*atual+'px';
+   document.getElementById('atual').classList.add('imgAtual')
 }

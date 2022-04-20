@@ -1,0 +1,90 @@
+/*========= MAIN PRODUTO =============*/
+
+.main-produto {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*========= SLIDES FOTOS PRODUTO =============*/
+
+.imagem-produto {
+  height: 600px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+} 
+
+.slides {
+    height: 550px; 
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.slide-imagem img {
+    height: 550px;
+}
+
+#atual {
+    margin-left: 1120px;
+    transition: all 1.5s;
+}
+
+.btn {
+    position: absolute;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-top: -5px;
+}
+
+.btn:hover {
+    transform: scale(1.5);
+}
+
+#voltar {
+    top: 60%;
+    left: 5%;
+}
+
+#avancar {
+    top: 60%;
+    left: 55%;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    top: 108%;   
+}
+
+.dots div {
+    transition: all 0.5s;
+    border: 3px solid #800320;
+    padding: 6px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.dots div:hover {
+    background-color: #800320;
+}
+
+.info-produto {
+    height: 600px;
+    width: 40%;
+    border-left: 1px solid rgb(173, 170, 170);
+}
+

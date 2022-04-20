@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/main_produto.css">
     
 </head>
 <body>
@@ -35,33 +36,23 @@
     
     <main class="main-produto">  
         <section class="imagem-produto">
-            <div class="slideshow-container">
-
-                <div class="mySlides fade">
-                  <img src="assets/camisa-flu-frente.png" class="slide_imagem" style="width:100%">
-                  <div class="text">Caption Text</div>
-                </div>
+            <div class="slides">
+              <div id="voltar" class="btn"><i class="fa-solid fa-angle-left"></i></div>
+              <div id="avancar" class="btn"><i class="fa-solid fa-angle-right"></i></div>
               
-                <div class="mySlides fade">
-                  <img src="assets/camisa-flu-costas.png" class="slide_imagem" style="width:100%">
-                  <div class="text">Caption Two</div>
-                </div>
-              
-                <div class="mySlides fade">
-                  <img src="assets/camisa-flu-diagonal.png" class="slide_imagem" style="width:100%">
-                  <div class="text">Caption Three</div>
-                </div>
-
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              <div id="atual" class="slide-imagem">
+                <img src="assets/camisa-flu-frente.png" alt="">
               </div>
-              <br>
-              
-              <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
+              <div class="slide-imagem">
+                <img src="assets/camisa-flu-diagonal.png" alt="">
               </div>
+              <div class="slide-imagem">
+                <img src="assets/camisa-flu-costas.png" alt="">
+              </div>
+            </div>
+
+            <div class="dots">     
+            </div>
         </section> 
      
 
@@ -69,6 +60,9 @@
 
         </section>
     </main>
+
+    <!--font awesome-->
+    <script src="https://kit.fontawesome.com/a0e731258b.js" crossorigin="anonymous"></script>
 
     <script src="js/main.js"></script>
 </body>
