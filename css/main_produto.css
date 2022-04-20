@@ -1,8 +1,23 @@
 /*========= HEADER PRODUTO =============*/
-header {
+main {
     font-family: 'Oswald', sans-serif;
-    border-bottom: 1px solid rgb(173, 170, 170);
+    border-top: 1px solid rgb(173, 170, 170);
 }
+
+.panel {
+    height: 600px;
+    width: 40%;
+    border-left: 1px solid rgb(173, 170, 170);
+}
+
+.panel h1 {
+    color: #800320;
+    margin: 15px;
+    font-size: 43px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
 
 
 /*========= MAIN PRODUTO =============*/
@@ -27,8 +42,8 @@ header {
 } 
 
 .slides {
-    height: 550px; 
-    width: 500px;
+    height: 555px; 
+    width: 670px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,9 +111,4 @@ header {
     background-color: #800320;
 }
 
-.info-produto {
-    height: 600px;
-    width: 40%;
-    border-left: 1px solid rgb(173, 170, 170);
-}
 
