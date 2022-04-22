@@ -1,8 +1,11 @@
+
 /*========= HEADER PRODUTO =============*/
 main {
     font-family: 'Oswald', sans-serif;
     border-top: 1px solid rgb(173, 170, 170);
 }
+
+/*========= INFO PRODUTO =============*/
 
 .panel {
     height: 600px;
@@ -18,7 +21,111 @@ main {
     text-transform: uppercase;
 }
 
+.panel p {
+    color: #000000;
+    margin: 15px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
 
+.panel h2 {
+    color: #000000;
+    margin: 15px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.tamanhos {
+    display: flex;
+}
+
+.btn_tamanho {
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: 2px solid #800320;
+    margin: 15px;
+}
+
+.btn_tamanho:hover {
+    color: white;
+    background-color: #800320;
+    cursor: pointer;
+}
+
+.quantidade {
+    display: flex;
+    align-items: center;
+}
+
+.quantidade h2 {
+    margin-top: 5px;
+}
+
+.quantidade_input {
+    margin-top: 5px;
+    height: 35px;
+    width: 50px;
+    padding-left: 10px;
+}
+
+.btn-carrinho {
+    font-size: 19px;
+    margin: 20px;
+    margin-right: 5px;
+    height: 60px;
+    width: 280px;
+}
+
+.btn-like {
+    font-size: 19px;
+    height: 60px;
+    width: 60px;
+    background-color: #296140;
+    border-color: #296140;
+}
+
+.btn-like:hover {
+    background-color: #183f28;
+    border-color: #183f28;
+}
+
+.btn-check:focus + .btn-like, .btn-like:focus {
+    color: #fff;
+    background-color: rgb(54, 128, 85);
+    border-color: #368055;
+    box-shadow: 0 0 0 0.25rem rgba(54, 128, 85, 0.5);
+  }
+  .btn-check:checked + .btn-like, .btn-check:active + .btn-like, .btn-like:active, .btn-like.active, .show > .btn-like.dropdown-toggle {
+    color: #fff;
+    background-color: rgb(54, 128, 85);
+    border-color: #368055;
+  }
+  .btn-check:checked + .btn-like:focus, .btn-check:active + .btn-like:focus, .btn-like:active:focus, .btn-like.active:focus, .show > .btn-like.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.25rem rgba(54, 128, 85, 0.5);
+  }
+  .btn-like:disabled, .btn-like.disabled {
+    color: #fff;
+    background-color: #183f28;
+    border-color: #183f28;
+  }
+
+.panel .total p {
+    font-family: 'Oswald', sans-serif;
+    color: #800320;
+    margin: 20px;
+    margin-top: 0;
+    font-size: 63px;
+    font-style: italic;
+    text-transform: uppercase;
+}
 
 /*========= MAIN PRODUTO =============*/
 
@@ -33,7 +140,7 @@ main {
 
 .imagem-produto {
   height: 600px;
-  width: 60%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -66,7 +173,7 @@ main {
     transition: all 1.0s;
 }
 
-.btn {
+.btn_slide {
     position: absolute;
     padding: 10px;
     text-align: center;
@@ -78,7 +185,7 @@ main {
     margin-top: -5px;
 }
 
-.btn:hover {
+.btn_slide:hover {
     transform: scale(1.5);
 }
 
