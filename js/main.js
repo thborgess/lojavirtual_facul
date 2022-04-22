@@ -53,3 +53,78 @@ function slide() {
     //imagem.style.marginLeft = 1120*atual+'px';
    document.getElementById('atual').classList.add('imgAtual')
 }
+
+//SOMA TOTAL
+
+function somaTotal() {
+    let quant = document.getElementById('quant').value;
+    let total = 299.99 * quant;
+
+    let elemento = document.getElementById('total');
+    elemento.innerHTML = "R$ " + total;
+}
+
+//MUDA TAB
+
+function tabVideo() {
+    document.getElementById('tab_video').style.display = "flex"; 
+    document.getElementById('tab_comentarios').style.display = "none";
+    document.getElementById('tab1').classList.add('active');
+    document.getElementById('tab2').classList.remove('active'); 
+}
+
+function tabComentarios() {
+    document.getElementById('tab_video').style.display = "none"; 
+    document.getElementById('tab_comentarios').style.display = "flex";
+    document.getElementById('tab2').classList.add('active');
+    document.getElementById('tab1').classList.remove('active'); 
+}
+
+//MOSTRA O TAMANHO ESCOLHIDO
+
+
+var p = document.getElementById('00');
+var m = document.getElementById('01');
+var g = document.getElementById('02');
+var gg = document.getElementById('03');
+var xg = document.getElementById('04');
+
+p.addEventListener('click', ()=> {
+    p.classList.add('escolhido');
+    document.getElementById('01').classList.remove('escolhido'); 
+    document.getElementById('02').classList.remove('escolhido'); 
+    document.getElementById('03').classList.remove('escolhido'); 
+    document.getElementById('04').classList.remove('escolhido'); 
+})
+
+m.addEventListener('click', ()=> {
+    m.classList.add('escolhido');
+    document.getElementById('00').classList.remove('escolhido'); 
+    document.getElementById('02').classList.remove('escolhido'); 
+    document.getElementById('03').classList.remove('escolhido'); 
+    document.getElementById('04').classList.remove('escolhido'); 
+})
+
+g.addEventListener('click', ()=> {
+    g.classList.add('escolhido');
+    document.getElementById('00').classList.remove('escolhido'); 
+    document.getElementById('01').classList.remove('escolhido'); 
+    document.getElementById('03').classList.remove('escolhido'); 
+    document.getElementById('04').classList.remove('escolhido'); 
+})
+
+gg.addEventListener('click', ()=> {
+    gg.classList.add('escolhido');
+    document.getElementById('01').classList.remove('escolhido'); 
+    document.getElementById('02').classList.remove('escolhido'); 
+    document.getElementById('00').classList.remove('escolhido'); 
+    document.getElementById('04').classList.remove('escolhido'); 
+})
+
+xg.addEventListener('click', ()=> {
+    xg.classList.add('escolhido');
+    document.getElementById('00').classList.remove('escolhido'); 
+    document.getElementById('01').classList.remove('escolhido'); 
+    document.getElementById('02').classList.remove('escolhido'); 
+    document.getElementById('03').classList.remove('escolhido'); 
+})

@@ -38,7 +38,7 @@
     </header>
     
     <main class="main-produto">  
-        <section class="imagem-produto">
+          <section class="imagem-produto">
             <div class="slides">
               <div id="voltar" class="btn_slide"><i class="fa-solid fa-angle-left"></i></div>
               <div id="avancar" class="btn_slide"><i class="fa-solid fa-angle-right"></i></div>
@@ -56,7 +56,8 @@
 
             <div class="dots">     
             </div>
-        </section> 
+          </section> 
+        
      
 
         <section class="panel">
@@ -65,50 +66,83 @@
           <h2>Tamanhos:</h2>
 
           <div class="tamanhos">
-            <div class="btn_tamanho">P</div>
-            <div class="btn_tamanho">M</div>
-            <div class="btn_tamanho">G</div>
-            <div class="btn_tamanho">GG</div>
-            <div class="btn_tamanho">XG</div>
+            <div id="00" class="btn_tamanho">P</div>
+            <div id="01" class="btn_tamanho">M</div>
+            <div id="02" class="btn_tamanho">G</div>
+            <div id="03" class="btn_tamanho">GG</div>
+            <div id="04" class="btn_tamanho">XG</div>
           </div>
 
           <div class="quantidade">
             <h2>Quantidade:</h2>
-            <input class="quantidade_input" type="number">
+            <input class="quantidade_input" id="quant" type="number">
           </div>
 
-          <button class="btn btn-primary btn-carrinho">
+          <button class="btn btn-primary btn-carrinho" onclick="somaTotal()">
             ADICIONAR AO CARRINHO
             <i class="fa-solid fa-cart-arrow-down "></i>
           </button>
 
-          <button class="btn btn-primary btn-like">
+          <button class="btn btn-primary btn-like" >
             <i class="fa-regular fa-heart"></i>
           </button>
 
           <div class="total">
             <h2>Total:</h2>
-            <p>R$ 0,00</p>
+            <p id="total" >R$ 0,00</p>
           </div>
         </section>
     </main>
 
-    <footer>
-      <ul class="nav nav-tabs">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
-    </footer>
+    <div class="comentarios_area">
+      <nav>
+        <ul class="nav nav-tabs">
+          <li class="nav-item" onclick="tabVideo()">
+            <a id="tab1" class="nav-link" aria-current="page" href="#tab_video">Vídeos</a>
+          </li>
+          <li class="nav-item" onclick="tabComentarios()">
+            <a id="tab2" class="nav-link" href="#tab_comentarios">Comentários</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div id="tab_video" class="tab_video">
+        <h1>Vídeos:</h1>
+        <iframe width="460" height="258" src="https://www.youtube.com/embed/gm0o1aCu7OE?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <div id="tab_comentarios" class="tab_comentarios">
+        <div class="comentario">
+          <div class="coment_titulo">
+            <h2>"Amei!"</h2>
+            <div class="estrelas">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <p>A camisa é mais linda que na internet! E ficou ótima no meu filho!</p>
+        </div>
+
+        <div class="comentario">
+          <div class="coment_titulo">
+            <h2>"Excelente!"</h2>
+            <div class="estrelas">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <p>Veste muito bem e muito confortável para sair ou para o dia a dia.</p>
+        </div>
+
+        <div class="comentario">
+          <div class="coment_titulo">
+            <h2>"Recomendo"</h2>
+            <div class="estrelas">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <p>Vamo FLUZÃO!</p>
+        </div>
+      </div>
+    </div>
 
     <!--font awesome-->
     <script src="https://kit.fontawesome.com/a0e731258b.js" crossorigin="anonymous"></script>

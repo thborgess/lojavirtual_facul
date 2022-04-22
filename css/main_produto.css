@@ -5,10 +5,19 @@ main {
     border-top: 1px solid rgb(173, 170, 170);
 }
 
+/*========= MAIN PRODUTO =============*/
+
+.main-produto {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /*========= INFO PRODUTO =============*/
 
 .panel {
-    height: 600px;
+    height: 620px;
     width: 40%;
     border-left: 1px solid rgb(173, 170, 170);
 }
@@ -40,6 +49,11 @@ main {
 
 .tamanhos {
     display: flex;
+}
+
+.escolhido {
+    background-color: #800320;
+    color: white;
 }
 
 .btn_tamanho {
@@ -127,19 +141,10 @@ main {
     text-transform: uppercase;
 }
 
-/*========= MAIN PRODUTO =============*/
-
-.main-produto {
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 /*========= SLIDES FOTOS PRODUTO =============*/
 
 .imagem-produto {
-  height: 600px;
+  height: 620px;
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -218,4 +223,86 @@ main {
     background-color: #800320;
 }
 
+/*========= TABS VIDEO/COMENTARIO =============*/
 
+.comentarios_area {
+    box-shadow: 3px 0px 3px rgb(63, 61, 61);
+}
+
+.comentarios_area li {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.comentarios_area li a {
+    color: #000000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.comentarios_area li a:hover {
+    color: #800320
+}
+
+.tab_video {
+    display: none;
+    flex-direction: column;
+}
+
+.tab_video h1{
+    font-size: 30px;
+    color: #000000;
+}
+
+.tab_video h1, iframe {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.tab_video iframe {
+    margin-bottom: 20px;
+}
+
+.tab_comentarios {
+    display: none;
+    justify-content: space-evenly;
+}
+
+.tab_comentarios h1{
+    font-size: 30px;
+    color: #000000;
+}
+
+.comentario {
+    margin: 30px;
+    height: 150px;
+    width: 350px;
+    border: 1px solid rgb(173, 170, 170);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.comentario p {
+    margin: 15px;
+}
+
+.coment_titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coment_titulo .estrelas {
+    margin: 15px;
+}
+
+.coment_titulo h2 {
+    margin: 15px;
+    margin-right: 0;
+    color: #800320;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
