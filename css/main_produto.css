@@ -249,12 +249,12 @@ main {
     flex-direction: column;
 }
 
-.tab_video h1{
+.tab_video h1, .tab_detalhes h1{
     font-size: 30px;
     color: #000000;
 }
 
-.tab_video h1, iframe {
+.tab_video h1, iframe, .tab_detalhes h1 {
     margin-left: 30px;
     margin-top: 20px;
 }
@@ -305,6 +305,30 @@ main {
     font-weight: 600;
     font-size: 20px;
     font-family: 'Montserrat', sans-serif;
+}
+
+.tab_detalhes {
+    display: none;
+    flex-direction: column;
+}
+
+.tab_detalhes p {
+    color: #000000;
+    margin: 15px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.tab_detalhes h2 {
+    color: #000000;
+    margin: 15px;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
 }
 
 /*========= RESPONSIVIDADE =============*/
@@ -400,6 +424,10 @@ main {
     #avancar {
         top: 50%;
         left: 90%;
+    }
+
+    .nav-item {
+        font-size: 15px;
     }
 }
 

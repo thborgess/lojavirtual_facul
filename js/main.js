@@ -69,15 +69,28 @@ function somaTotal() {
 function tabVideo() {
     document.getElementById('tab_video').style.display = "flex"; 
     document.getElementById('tab_comentarios').style.display = "none";
+    document.getElementById('tab_detalhes').style.display = "none";
     document.getElementById('tab1').classList.add('active');
     document.getElementById('tab2').classList.remove('active'); 
+    document.getElementById('tab3').classList.remove('active'); 
 }
 
 function tabComentarios() {
     document.getElementById('tab_video').style.display = "none"; 
     document.getElementById('tab_comentarios').style.display = "flex";
+    document.getElementById('tab_detalhes').style.display = "none";
     document.getElementById('tab2').classList.add('active');
+    document.getElementById('tab1').classList.remove('active');
+    document.getElementById('tab3').classList.remove('active');  
+}
+
+function tabDetalhes() {
+    document.getElementById('tab_detalhes').style.display = "flex";
+    document.getElementById('tab_video').style.display = "none"; 
+    document.getElementById('tab_comentarios').style.display = "none";
+    document.getElementById('tab3').classList.add('active');
     document.getElementById('tab1').classList.remove('active'); 
+    document.getElementById('tab2').classList.remove('active'); 
 }
 
 //MOSTRA O TAMANHO ESCOLHIDO
